@@ -4,164 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sosonauten Offizielle Website</title>
-    <style>
-        /* Allgemeine Stile */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0e0e10; /* Sehr dunkles Schwarz-Blau */
-            color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        header {
-            background-color: #0d47a1; /* Dunkles Blau */
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        header img {
-            width: 600px; /* Vergrößertes Bild */
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        header h1 {
-            font-size: 2.5em; /* Größerer Titel */
-            margin: 20px 0;
-        }
-
-        header h2 {
-            font-size: 1.2em;
-            margin: 10px 0 0;
-            font-weight: normal;
-            color: #bbdefb; /* Hellblau für Text */
-        }
-
-        nav {
-            background-color: #111; /* Sehr dunkles Schwarz */
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        nav a {
-            color: #bbdefb; /* Hellblau */
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            background-color: #0d47a1; /* Dunkelblau bei Hover */
-            color: #fff;
-        }
-
-        main {
-            padding: 50px 20px;
-        }
-
-        section {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-            background-color: #151515; /* Dunkler Schwarzton */
-            border-radius: 10px;
-            padding: 40px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-        }
-
-        h2 {
-            font-size: 2.2em;
-            margin-bottom: 25px;
-            color: #2196f3; /* Kräftiges Blau */
-        }
-
-        p {
-            font-size: 1.1em;
-            color: #cfd8dc; /* Hellgrau für Text */
-        }
-
-        iframe {
-            margin-top: 40px;
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            max-width: 100%;
-            width: 600px;
-            height: 600px;
-        }
-
-        footer {
-            background-color: #111; /* Sehr dunkles Schwarz */
-            color: #888;
-            padding: 20px;
-            font-size: 0.9em;
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        footer p {
-            margin: 5px 0;
-        }
-
-        /* Mobile Optimierung */
-        @media (max-width: 768px) {
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-
-            iframe {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-theme="dark">
+    <div class="cosmic-background">
+        <div class="stars"></div>
+        <div class="nebula"></div>
+    </div>
 
-    <header>
-        <img src="Sosonauten_Website.png" alt="Die Sosonauten">
-        <h1>Die Offizielle Sosonauten Website</h1>
-        <h2>&copy; 2025 Sosonauten. Alle Rechte vorbehalten. Hosted by Vadimus</h2>
-    </header>
-
-    <nav>
-        <a href="https://vadimusyt.github.io">Vadimus Websitus</a>
-        <a href="SoosAbout.html">Über uns</a>
-        <a href="SoosMusic.html">Unsere Videos</a>
-        <a href="SoosPassword.html" target="_new">Admin Panel</a>
-        <a href="https://www.youtube.com/@SOSONAUTEN">Sosonauten YouTube Channel</a>
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">SOSONAUTEN</span>
+                <span class="logo-subtitle">OFFIZIELLE WEBSITE</span>
+            </div>
+            <div class="nav-controls">
+            </div>
+        </div>
     </nav>
 
+    <header class="hero-section">
+        <div class="hero-content">
+            <img src="Sosonauten_Website.png" alt="Die Sosonauten" class="hero-image text-reveal">
+            <h1 class="hero-title">
+                <span class="text-reveal delay-1">Die Offizielle</span>
+                <span class="text-reveal delay-2">Sosonauten Website</span>
+            </h1>
+            <p class="hero-subtitle text-reveal delay-3">&copy; 2025 Sosonauten. Alle Rechte vorbehalten. Hosted by Vadimus</p>
+            <div class="hero-cta text-reveal delay-4">
+                <a href="https://vadimusyt.github.io" class="cta-button primary">Vadimus Websitus</a>
+                <a href="https://vadimusyt.github.io/Sosonauten/about" class="cta-button secondary">Über uns</a>
+                <a href="https://vadimusyt.github.io/Sosonauten/about" class="cta-button accent">Sosonauten About Page</a>
+            </div>
+        </div>
+    </header>
+
     <main>
-        <section id="about">
-            <h2>Offizielle Website der SOSONAUTEN</h2>
-            <p>Abonniert unseren Kanal und bleibt auf dem Laufenden!</p>
+        <section id="about" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Über die SOSONAUTEN</h2>
+                <p class="text-reveal delay-0">Abonniert unseren Kanal und bleibt auf dem Laufenden!</p>
 
-            <h2>Mitglieder</h2>
-            <p>Juliusus, Paulus, Vadimus, Nilsus</p>
+                <div class="info-grid">
+                    <div class="info-card text-reveal delay-1">
+                        <h3>Mitglieder</h3>
+                        <p>Juliusus, Paulus, Vadimus, Nilsus</p>
+                    </div>
+                    <div class="info-card text-reveal delay-2">
+                        <h3>Kontakt</h3>
+                        <p>drdj.commandx@gmail.com</p>
+                    </div>
+                    <div class="info-card text-reveal delay-3">
+                        <h3>Credits</h3>
+                        <p>Negative0</p>
+                    </div>
+                </div>
 
-            <h2>Kontaktieren</h2>
-            <p>drdj.commandx@gmail.com</p>
+                <div class="youtube-link text-reveal delay-4">
+                    <a href="https://www.youtube.com/@SOSONAUTEN" class="cta-button primary">
+                        <span>Sosonauten YouTube Channel</span>
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-            <h2>Credits</h2>
-            <p>Negative0</p>
-
-            <iframe src="https://e.widgetbot.io/channels/1241405561720017109/1241413161236561950" allow="clipboard-write; fullscreen"></iframe>
+        <section id="videos" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Unsere Videos</h2>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <h3>Sis lul lal sis sus soos marcel<h3>
+                        <div class="video-embed">
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/MDSsBfjOrRo" 
+                                title="YouTube video placeholder" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <h3>Der Noah mit sein Schasch (Voll version)</h3>
+                        <div class="video-embed">
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/saGnBWzH84c" 
+                                title="YouTube video placeholder" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <h3>Ketchup vs. Senf</h3>
+                        <div class="video-embed">
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/nKBNvMuVRJw" 
+                                title="YouTube video placeholder" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024-2025 Sosonauten. Alle Rechte vorbehalten.</p>
-        <p>Hosted by VadimusYT</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024-2025 Sosonauten. Alle Rechte vorbehalten. Hosted by VadimusYT</p>
+            </div>
+        </div>
     </footer>
 
+    <script type="module" src="script-sosonauten.js"></script>
 </body>
 </html>
